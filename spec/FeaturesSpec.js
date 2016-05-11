@@ -38,7 +38,7 @@ describe('Feature Test:', function(){
 
     it('blocks landing when weather is stormy', function(){
       spyOn(Math, 'random').and.returnValue(1);
-      expect(function(){ plane.land(); }).toThrowError('cannot land during storm');
+      expect(function(){ plane.land(airport); }).toThrowError('cannot land during storm');
       expect(airport.planes()).not.toContain(plane);
     });
   });
