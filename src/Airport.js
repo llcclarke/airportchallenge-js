@@ -23,5 +23,5 @@ Airport.prototype.clearForTakeOff = function(plane){
 };
 
 Airport.prototype.isStormy = function() {
-  return false;
+  this._weather;
 };
